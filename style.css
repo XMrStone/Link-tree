@@ -1,10 +1,10 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-:root{
+:root {
   --text-color: white;
   --bg-url: url(./assets/bg-mobile.jpg);
   --stroke-color: rgba(255, 255, 255, 0.5);
@@ -14,7 +14,7 @@
   --switch-bg-url: url(./assets/moon-stars.svg);
 }
 
-.light{
+.light {
   --text-color: black;
   --bg-url: url(./assets/bg-mobile-light.jpg);
   --stroke-color: rgba(0, 0, 0, 0.5);
@@ -22,7 +22,6 @@
   --surface-color-hover: rgba(0, 0, 0, 0.02);
   --highlight-color: rgba(0, 0, 0, 0.1);
   --switch-bg-url: url(./assets/sun.svg);
-
 }
 
 body {
@@ -31,17 +30,18 @@ body {
 }
 
 body * {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: var(--text-color);
 }
 
 #container {
-  width: 360px;
+  width: 100%;
+  max-width: 588px;
   margin: 56px auto 0px;
   padding: 0 24px;
 }
 
-#profile{
+#profile {
   text-align: center;
   padding: 24px;
 }
@@ -50,19 +50,19 @@ body * {
   width: 112px;
 }
 
-#profile p{
+#profile p {
   font-weight: 500;
   line-height: 24px;
   margin-top: 8px;
 }
 /*switch*/
-#switch{
-    position: relative;
-    width: 64px;
+#switch {
+  position: relative;
+  width: 64px;
 
-    margin: 4px auto;
+  margin: 4px auto;
 }
-#switch button{
+#switch button {
   width: 32px;
   height: 32px;
   background: white var(--switch-bg-url) no-repeat center;
@@ -76,11 +76,11 @@ body * {
   z-index: 1;
 }
 
-.light #switch button{
+.light #switch button {
   right: 0;
   left: initial;
 }
-#switch spam{
+#switch spam {
   display: block;
   width: 64px;
   height: 24px;
@@ -91,7 +91,7 @@ body * {
 }
 /* Link */
 
-ul{
+ul {
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -99,8 +99,7 @@ ul{
   padding: 24px 0;
 }
 
-ul li a{
-  
+ul li a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -108,7 +107,7 @@ ul li a{
   padding: 16px 24px;
 
   background: var(--surface-color);
-  border:  1px solid var(--stroke-color);
+  border: 1px solid var(--stroke-color);
   border-radius: 8px;
   backdrop-filter: blur(4px);
 
@@ -118,19 +117,19 @@ ul li a{
 }
 
 /*pseudo-selctor*/
-ul li a:hover{
+ul li a:hover {
   background: var(--surface-color-hover);
-  border:  1px solid var(--text-color);
+  border: 1px solid var(--text-color);
 }
 
-#social-links{
+#social-links {
   display: flex;
   justify-content: center;
   padding: 24px 0;
   font-size: 24px;
 }
 
-#social-links a{
+#social-links a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -140,10 +139,10 @@ ul li a:hover{
   border-radius: 50%;
 }
 
-#social-links a:hover{
+#social-links a:hover {
   background: var(--highlight-color);
 }
-footer{
+footer {
   padding: 24px 0;
   text-align: center;
   font-size: 14px;
